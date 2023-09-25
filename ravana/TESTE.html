@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de RPG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Jogo de RPG</h1>
+    <button onclick="criarPersonagem()">Criar Personagem</button>
+    <div id="personagens"></div>
+    <script src="script.js">
+
+    // Array para armazenar os personagens
+const personagens = [];
+
+// Função para criar um personagem
+function criarPersonagem() {
+    const nome = prompt("Digite o nome do personagem: ");
+    const forca = parseInt(prompt("Digite o valor da força (-3 a +3): "));
+    const destreza = parseInt(prompt("Digite o valor da destreza (-3 a +3): "));
+    const agilidade = parseInt(prompt("Digite o valor da agilidade (-3 a +3): "));
+    const inteligencia = parseInt(prompt("Digite o valor da inteligência (-3 a +3): "));
+    const percepcao = parseInt(prompt("Digite o valor da percepção (-3 a +3): "));
+
+    const personagem = {
+        nome: nome,
+        forca: forca,
+        destreza: destreza,
+        agilidade: agilidade,
+        inteligencia: inteligencia,
+        percepcao: percepcao
+    };
+
+    personagens.push(personagem);
+
+    atualizarPersonagens();
+}
+
+// Função para atualizar a exibição dos personagens
+function atualizarPersonagens() {
+    const personagensDiv = document.getElementById("personagens");
+    personagensDiv.innerHTML = "";
+
+    for (const personagem of personagens) {
+        const atributos = `
+            <strong>${personagem.nome}</strong><br>
+            Força: ${personagem.forca}<br>
+            Destreza: ${personagem.destreza}<br>
+            Agilidade: ${personagem.agilidade}<br>
+            Inteligência: ${personagem.inteligencia}<br>
+            Percepção: ${personagem.percepcao}<br><br>
+        `;
+
+        personagensDiv.innerHTML += atributos;
+    }
+}
+</script>
+</body>
+</html>

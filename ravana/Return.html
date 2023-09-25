@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta cha<rset="UTF-8">
+     <meta name="viewport" content="width=>device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+     <script>
+          /*function peso/altura
+          var peso = prompt ("digite a altura");
+          peso = peso.replace(".",".");
+          peso =  parsefloat (peso);
+          
+          var altura = prompt ("digite a altura");
+          altura = altura.replace(".",".");
+          altura = parsefloat (altura);
+          */
+
+
+          function calculaIMC(altura, peso) {
+
+               var imc = peso / (altura * altura);
+
+               if (imc > 40) {
+                    return ("Obesidade grau III");
+               } else {
+                    if (imc <= 40 && imc >= 35) {
+                         return ("obesidade grau II");
+                    } else {
+
+                         if (imc < 35 && imc >= 30) {
+                              return ("obesidade grau I")
+                         } else {
+
+                              if (imc < 30 && imc >= 25) {
+                                   return ("SobrePeso")
+                              } else {
+                                   if (imc < 25 && imc= 18.5) {
+                                   }else {
+                                        return "Magreza"
+                                   }
+
+
+                              }
+                         }
+                    }
+               }
+          }
+
+               var peso = prompt("digite o peso:")
+               var altura = prompt("digite a altura:")
+
+               var faixa = calculaIMC(peso, altura);
+               document.write(faixa);
+    //document.write(faixa)
+
+     </script>
+</body>
+
+</html>

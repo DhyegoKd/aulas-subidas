@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <body>
+<script>
+var impares = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20)
+        console.log(impares)
+
+        function main() {
+            var impares = []
+            for (var i = 1; i <= 20; i++) {
+                if (i % 2 == 1) {
+                    impares.push(i ** 2)
+                }
+            }
+            for (var impares of impares) {
+                document.write(impares + "<br>")
+            }
+        }
+        main()
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+
+        function main() {
+            var A = [25, 6, -9, 22, 34]
+            var B = [56, 12, 0, -89, 4]
+            for (var i = 0; i < A.length; i++) {
+                var sum = A[i] + B[i]
+                document.write(sum + "<br>")
+            }
+        }
+        main();
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+        function main() {
+            var A = [25, 6, -9, 22, 34]
+            var B = [56, 12, 0, -89, 4]
+            var C = []
+            for (var i = 0; i < A.length; i++) {
+                var sum = A[i] + B[i]
+                C.push(sum)
+            }
+            document.write(C + "<br>")
+        }
+        main();
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+
+        <ul>
+<li>V[X] = <b>6</b></li>
+<li>V[Y] = <b>8</b></li>
+<li>V[X + 1] = <b>7</b></li>
+<li>V[X*2] = <b>4</b></li>
+<li>V[Y*2] = <b>16</b></li>
+<li>V[V[X+Y]] = <b>33</b></li>
+<li>V[X+Y] = <b>8</b></li>
+<li>V[8 - V[2]] = <b>6</b></li>
+<li>V[V[4]] = <b>33</b></li>
+<li>V[V[V[7]]] = <b>1</b></li>
+</ul>
+
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+        
+        const nomes = ["João", "Maria", "José", "Ana", "Pedro", "Luiza", "Rafael", "Isabel"];
+const sobrenomes = ["Silva", "Souza", "Santos", "Oliveira", "Lima", "Freitas", "Pereira", "Mendes"];
+const nome_completo = []
+
+for (const nome, sobrenome of zip(nomes, sobrenomes)) {
+  nome_completo.push(nome + " " + sobrenome)
+}
+const A = [1, 2, 3]
+const B = [4, 5, 6]
+const C = A.concat(B)
+
+console.log(A)
+console.log(B)
+console.log(C)
+console.log(nome_completo)
+
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+
+const nomes = ["João", "Maria", "José", "Ana", "Pedro", "Luiza", "Rafael", "Isabel"]
+
+const nome = prompt("Qual nome você gostaria de buscar?")
+
+const index = nomes.indexOf(nome)
+
+if (index > -1) {
+  console.log(nome + " foi encontrado no array.")
+} else {
+  alert("Nome não encontrado.")
+}
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+
+        
+var vetor = new Array(20);
+
+for (var i = 0; i < 20; i++) {
+  vetor[i] = Math.floor(Math.random() * 100)
+}
+
+console.log("Vetor original:")
+for (var i = 0; i < 20; i++) {
+  console.log(vetor[i])
+}
+var temp = vetor[0]
+vetor[0] = vetor[19]
+vetor[19] = temp
+
+temp = vetor[1]
+vetor[1] = vetor[18]
+vetor[18] = temp
+
+for (var i = 2; i < 19; i += 2) {
+  temp = vetor[i]
+  vetor[i] = vetor[19 - i]
+  vetor[19 - i] = temp
+}
+
+console.log("Vetor trocado:")
+for (var i = 0; i < 20; i++) {
+  console.log(vetor[i])
+}
+    </script>
+</body>
+</head>
+
+</html>

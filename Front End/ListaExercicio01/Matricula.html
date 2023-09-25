@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-br">
+    <head> 
+        <meta name="author" content= "Dhyego">
+        <meta charset='utf-8'>
+        <title>Lista de exercicio01</title>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="css/estiloPaginaNoticias.css">
+    </head>
+    <body style="margin: 0;">
+        <header>
+
+            <div class="cabeçalho">
+                <img src="imagens/logo-reitoria.png">
+            </div>
+             <div class="menu">
+
+                <center>
+                 <a href="index.html" class="menu"> Página Principal </a>  &nbsp; | &nbsp;
+                 <a href="historia.html" class="menu"> História do Campus </a>  &nbsp; | &nbsp;
+                 <a href="Imagens.html" class="menu"> Imagens </a>  &nbsp; | &nbsp;
+                 <a href="Noticias.html" class="menu"> Notícias </a>  &nbsp; | &nbsp;
+                 <a href="Matricula.html" class="menu"> Matrícule-se </a>  &nbsp; | &nbsp;
+                </center>
+             </div>
+     
+             <hr class="linha">
+         <theader>
+            <body>
+
+                <div align="center">
+            <div align="left" class="divInterna2">
+                
+
+               <img src="imagens/matricula.png"class="imagemmatricula">
+               <form action="/submit" method="post">
+               <fieldset>
+
+                <center><h2>Informações Pessoais</h2></center>
+                <hr>
+
+
+               
+               
+            
+            
+                <label for="nome">Nome:</label>
+                <input class="estiloInputs" type="text" id="nome" name="nome" required><br><br>
+            
+                <label for="cpf">CPF:</label>
+                <input class="estiloInputs" type="text" id="cpf" name="cpf" required><br><br>
+          
+                <label for="email">Email:</label>
+                <input class="estiloInputs" type="email" id="email" name="email" required><br><br>
+            
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
+            
+                <label for="cidade">Cidade:</label>
+                <select id="cidade" name="cidade" required>
+                  <option value="" disabled selected>Selecione a cidade</option>
+                  <option value="Recife">Recife</option>
+                  <option value="Olinda">Olinda</option>
+                  <option value="Jaboatão dos Guararapes">Jaboatão dos Guararapes</option>
+                  <option value="Caruaru">Caruaru</option>
+                  <option value="Petrolina">Petrolina</option>
+                </select><br><br>
+            
+                <label for="escolaridade">Escolaridade:</label>
+                <br>
+                <input type="radio" id="fundamental" name="escolaridade" value="fundamental" required>
+                <label for="fundamental">Nível Fundamental</label><br>
+                <input type="radio" id="medio" name="escolaridade" value="medio">
+                <label for="medio">Nível Médio</label><br>
+                <input type="radio" id="superior" name="escolaridade" value="superior">
+                <label for="superior">Nível Superior</label><br><br>
+            
+                <input type="submit" value="Enviar">
+              </form>
+            </fieldset>
+        </div>
+    </div>
+            </body>
+           
+
