@@ -43,6 +43,6 @@ app.post("/salvarProduto", (req, res)=>{
         descricao : descricao
     }).then (()=>{
         res.redirect("/");
-    })
+    });
 });
 

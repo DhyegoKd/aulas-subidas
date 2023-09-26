@@ -1,0 +1,220 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Ficção"
+    },
+    {
+      "id": 2,
+      "nome": "Não Ficção"
+    },
+    {
+      "id": 3,
+      "nome": "História"
+    },
+    {
+      "id": 4,
+      "nome": "Romance"
+    },
+    {
+      "id": 5,
+      "nome": "terror"
+    },
+    {
+      "id": 6,
+      "nome": "Suspense"
+    },
+    {
+      "id": 7,
+      "nome": "Aventura"
+    },
+    {
+      "id": 8,
+      "nome": "Ação"
+    },
+    {
+      "id": 9,
+      "nome": "Religioso"
+    },
+    {
+      "id": 10,
+      "nome": "Drama"
+    },
+    {
+      "id": 11,
+      "nome": "RPG"
+    },
+    {
+      "id": 12,
+      "nome": "Crônica"
+    },
+    {
+      "id": 13,
+      "nome": "Conto"
+    }
+  ],
+  "livros": [
+    {
+      "id": 1,
+      "titulo": "Dom Quixote",
+      "autor": "Miguel de Cervantes",
+      "anoPublicacao": 1605,
+      "isbn": "978-85-359-0277-3",
+      "disponivel": true,
+      "categoriaId": 1
+    },
+    {
+      "id": 2,
+      "titulo": "Origens",
+      "autor": "Neil deGrasse Tyson",
+      "anoPublicacao": 2017,
+      "isbn": "978-85-359-0650-4",
+      "disponivel": true,
+      "categoriaId": 2
+    },
+    {
+      "id": 3,
+      "titulo": "Uma Breve História do Tempo",
+      "autor": "Stephen Hawking",
+      "anoPublicacao": 1988,
+      "isbn": "978-85-359-0278-0",
+      "disponivel": false,
+      "categoriaId": 2
+    },
+    {
+      "id": 4,
+      "titulo": "Soluções de um dia",
+      "autor": "Dhyego",
+      "anoPublicacao": 2023,
+      "isbn": "978-85-359-0279-0",
+      "disponivel": false,
+      "categoriaId": 2
+    },
+    {
+      "id": 5,
+      "titulo": "Um pé de Laranja Lima",
+      "autor": "Carlinhos Brau",
+      "anoPublicacao": 1975,
+      "isbn": "978-85-359-0280-0",
+      "disponivel": true,
+      "categoriaId": 7
+    },
+    {
+      "id": 6,
+      "titulo": "Viva La Vida",
+      "autor": "lorenzo",
+      "anoPublicacao": 2015,
+      "isbn": "978-85-359-0281-0",
+      "disponivel": false,
+      "categoriaId": 7
+    },
+    {
+      "id": 7,
+      "titulo": "Segue o Baile",
+      "autor": "Annita",
+      "anoPublicacao": 1955,
+      "isbn": "978-85-359-0282-0",
+      "disponivel": false,
+      "categoriaId": 7
+    },
+    {
+      "id": 8,
+      "titulo": "Reggae é vida",
+      "autor": "Bob Marley",
+      "anoPublicacao": 1999,
+      "isbn": "978-85-359-0283-0",
+      "disponivel": true,
+      "categoriaId": 12
+    },
+    {
+      "id": 9,
+      "titulo": "Bem Almofadado",
+      "autor": "Caio Souza",
+      "anoPublicacao": 2023,
+      "isbn": "978-85-359-0284-0",
+      "disponivel": true,
+      "categoriaId": 13
+    },
+    {
+      "id": 10,
+      "titulo": "Vocês querem Ler?",
+      "autor": "Jamili Alessandra",
+      "anoPublicacao": 2023,
+      "isbn": "978-85-359-0285-0",
+      "disponivel": true,
+      "categoriaId": 9
+    },
+    {
+      "id": 11,
+      "titulo": "Máquina Mortífera",
+      "autor": "Filmes Action",
+      "anoPublicacao": 1988,
+      "isbn": "978-85-359-0286-0",
+      "disponivel": false,
+      "categoriaId": 8
+    },
+    {
+      "id": 12,
+      "titulo": "World War Craft",
+      "autor": "Lion States",
+      "anoPublicacao": 1988,
+      "isbn": "978-85-359-0287-0",
+      "disponivel": true,
+      "categoriaId": 11
+    },
+    {
+      "id": 13,
+      "titulo": "As Crônicas de hervilince",
+      "autor": "Seraphina Duolin",
+      "anoPublicacao": 2000,
+      "isbn": "978-85-359-0288-0",
+      "disponivel": false,
+      "categoriaId": 12
+    },
+    {
+      "id": 14,
+      "titulo": "True life",
+      "autor": "Stephen Hawking",
+      "anoPublicacao": 2015,
+      "isbn": "978-85-359-0289-0",
+      "disponivel": true,
+      "categoriaId": 10
+    },
+    {
+      "id": 15,
+      "titulo": "Jesus o Salvador",
+      "autor": "Pastor Erick",
+      "anoPublicacao": 2013,
+      "isbn": "978-85-359-0290-0",
+      "disponivel": true,
+      "categoriaId": 9
+    },
+    {
+      "id": 16,
+      "titulo": "Dinossauro vivem entre nós",
+      "autor": "Mundo Bita",
+      "anoPublicacao": 2016,
+      "isbn": "978-85-359-0291-0",
+      "disponivel": true,
+      "categoriaId": 13
+    },
+    {
+      "id": 17,
+      "titulo": "Porquê vives?",
+      "autor": "Carlos Andrade",
+      "anoPublicacao": 2011,
+      "isbn": "978-85-359-0278-0",
+      "disponivel": false,
+      "categoriaId": 10
+    },
+    {
+      "id": 18,
+      "titulo": "Por onde anda a Olanda",
+      "autor": "Silveira londos",
+      "anoPublicacao": 2001,
+      "isbn": "978-85-359-0278-0",
+      "disponivel": false,
+      "categoriaId": 6
+    }
+  ]
+}
