@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #ffffff7e;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -16,11 +16,10 @@ body {
 }
 
 .vs-image {
-    background-image: url("C:\Users\Dhyego Kaderline\Desktop\Nova pasta\aulas-subidas\professor\pokemonapi\imagens\vs.png");
     max-width: 100px;
     display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: auto;
+    margin-top: 300px;
 }
 
 .pokemon-card {

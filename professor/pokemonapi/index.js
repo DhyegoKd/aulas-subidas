@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Agora, defina o src da imagem 'Vs' após o carregamento bem-sucedido dos Pokémon
                 if (lado === 'direita') {
-                    document.getElementById('vs.image').src = "C:\Users\Dhyego Kaderline\Desktop\Nova pasta\aulas-subidas\professor\pokemonapi\imagens\vs.png";
+                    document.getElementById('vs-image').src = 'imagens/vs.png';
                 }
             })
             .catch(function (error) {
