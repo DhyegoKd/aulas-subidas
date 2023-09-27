@@ -1,5 +1,5 @@
 body {
-    background-image: url("C:/Users/dhyego/Desktop/Em casa/aulas-subidas/professor/pokemonapi/imagens/Arena.jpg");
+    background-image: url("imagens/Arena.jpg");
     background-size: cover;
 }
 
@@ -16,6 +16,7 @@ body {
 }
 
 .vs-image {
+    background-image: url("C:\Users\Dhyego Kaderline\Desktop\Nova pasta\aulas-subidas\professor\pokemonapi\imagens\vs.png");
     max-width: 100px;
     display: block;
     margin: 0 auto;
