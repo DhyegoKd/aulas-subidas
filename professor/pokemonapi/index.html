@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalha Pokémon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="container mt-5">
+    <div class="header">
+        <h1>Batalha Pokémon</h1>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="input-group">
+                <input type="text" id="escolha-pokemon-esquerda" class="form-control" placeholder="Digite o nome ou número do Pokémon">
+                <button id="botao-escolher-esquerda" class="btn btn-primary">Escolher Pokémon</button>
+            </div>
+            <div class="card pokemon-card" style="display: none;" id="pokemon-card-esquerda">
+                <img class="card-img-top" id="img-card-esquerda" alt="Imagem do Pokémon da Esquerda">
+                <div class="card-body">
+                    <h5 class="card-title" id="nome-pokemon-esquerda"></h5>
+                    <p class="card-text">
+                        Tipo: <span id="tipo-pokemon-esquerda"></span><br>
+                        Habilidades: <ul id="habilidades-esquerda"></ul><br>
+                        Moves:
+                        <select id="moves-select-esquerda"></select>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 text-center">
+            <div id="vs-container" class="col-md-2 text-center"></div> <!-- Contêiner para a imagem VS -->
+        </div>
+        <div class="col-md-5">
+            <div class="input-group">
+                <input type="text" id="escolha-pokemon-direita" class="form-control" placeholder="Digite o nome ou número do Pokémon">
+                <button id="botao-escolher-direita" class="btn btn-primary">Escolher Pokémon</button>
+            </div>
+            <div class="card pokemon-card" style="display: none;" id="pokemon-card-direita">
+                <img class="card-img-top" id="img-card-direita" alt="Imagem do Pokémon da Direita">
+                <div class="card-body">
+                    <h5 class="card-title" id="nome-pokemon-direita"></h5>
+                    <p class="card-text">
+                        Tipo: <span id="tipo-pokemon-direita"></span><br>
+                        Habilidades: <ul id="habilidades-direita"></ul><br>
+                        Moves:
+                        <select id="moves-select-direita"></select>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-<input type="text" id="nome-pokemon">
-<button id="botao">BOTÃO</button> 
-
-<div class="card" style="width: 18rem;">
-     <img id="img-card" class="card-img-top" alt="...">
-     <div class="card-body">
-       <p class="card-text">
-          <ul id="habilidades">
-
-          </ul>
-     </div>
-   </div>
-</p>
-
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="index.js"></script>
 </body>
 </html>
