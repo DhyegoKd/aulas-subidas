@@ -44,7 +44,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById(nomeId).textContent = nome;
                 document.getElementById(tipoId).textContent = `Tipo: ${tipo}`;
 
-                // Mostra o cartão do Pokémon após o carregamento bem-sucedido
                 document.getElementById(cardId).style.display = 'block';
 
                 // Agora, defina o src da imagem 'Vs' após o carregamento bem-sucedido dos Pokémon
