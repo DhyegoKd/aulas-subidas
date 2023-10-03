@@ -1,44 +1,98 @@
 {
-  "users": [
+  "livros": [
     {
       "id": 1,
-      "name": "John"
+      "titulo": "O Hobbit",
+      "autor": "J.R.R. Tolkien",
+      "ano_publicacao": 1937,
+      "categoria_id": 1
     },
     {
       "id": 2,
-      "name": "Jane Smith"
+      "titulo": "1984",
+      "autor": "George Orwell",
+      "ano_publicacao": 1949,
+      "categoria_id": 2
     }
   ],
-  "post": [
+  "categorias": [
     {
       "id": 1,
-      "title": "joão",
-      "body": "Conteúdo do Post 1",
-      "userID": 1
+      "nome": "Fantasia"
     },
     {
       "id": 2,
-      "title": "feijão",
-      "body": "Conteúdo do Post 2",
-      "userID": 2
+      "nome": "Ficção Científica"
     },
     {
-      "id": 3,
-      "title": "azul",
-      "body": "Conteúdo do Post 3",
-      "userID": 3
+      "nome": "teste",
+      "id": 3
     },
     {
-      "id": 4,
-      "title": "CACO",
-      "body": "Conteúdo do Post 4",
-      "userID": 4
+      "nome": "terror",
+      "id": 4
     },
     {
-      "id": 5,
-      "title": "CACO",
-      "body": "Conteúdo do Post 5",
-      "userID": 5
+      "nome": "root",
+      "id": 5
+    },
+    {
+      "nome": "hot",
+      "id": 6
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "João",
+      "senha": "123",
+      "livros_emprestados": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Maria",
+      "senha": "456",
+      "livros_emprestados": [
+        3
+      ]
+    },
+    {
+      "nome": "NIlson",
+      "id": 3
+    },
+    {
+      "nome": "Junior",
+      "id": 4
+    },
+    {
+      "nome": "Jamili Alessandra meu amor",
+      "id": 5
+    }
+  ],
+  "pedidos": [
+    {
+      "id": 1,
+      "usuario_id": 2,
+      "livro_id": 1,
+      "data_emprestimo": "2023-10-02",
+      "data_devolucao": "2023-10-16"
+    },
+    {
+      "id": 2,
+      "usuario_id": 1,
+      "livro_id": 2,
+      "data_emprestimo": "2023-10-03",
+      "data_devolucao": "2023-10-17"
+    },
+    {
+      "usuario_id": "5",
+      "livro_id": "5",
+      "data_emprestimo": "2023-10-02",
+      "data_devolucao": "2023-10-31",
+      "id": 3
     }
   ]
 }
