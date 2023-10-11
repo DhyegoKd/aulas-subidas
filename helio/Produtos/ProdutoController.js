@@ -1,9 +1,14 @@
 const express = require("express");
-const Router = express.Router()
+const router = express.Router()
 const Produto = require ("./Produto");
+const bodyParser = require("body-parser");
 
-router.get("/produto", (req, res)=>{
-     res.render("produto");
+router.use(bodyParser.urlencoded({extended : false}));
+router.use(bodyParser.json());
+
+
+router.get("/produto/novo", (req, res)=>{
+     res.render("produtos/novo");
  });
  
  router.post("/salvarProduto", (req, res)=>{
@@ -13,16 +18,20 @@ router.get("/produto", (req, res)=>{
          titulo : titulo,
          descricao : descricao
      }).then (()=>{
-         res.redirect("/");
+         res.redirect("/produtos");
      });
  });
  
  router.get ("/produtos", (req, res)=>{
      Produto.findAll({raw : true }).then(produtos=>{
          console.log (produtos);
+         res.render("produtos/index", {
+            produtos : produtos
+         });
      });
-     res.render("produtos/index");
+     
  });
+
  module.exports = router;
  
  
