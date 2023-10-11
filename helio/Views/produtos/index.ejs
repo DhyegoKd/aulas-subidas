@@ -26,8 +26,9 @@
                                    <%= produto.Descrição %>
                               </td>
                               <td>
-                                   <form action="/produto/delete" method="post">
-                                        <input type="hidden" name="id" value="<% produto.id %>">
+                                   <form action="/produtos/delete" method="post">
+                                        <input type="hidden" name="id" 
+                                        value="<%= produto.id %>">
                                         <button class="btn btn-danger">Deletar</button>
                                    </form>
                               </td>
