@@ -13,6 +13,13 @@
       "autor": "George Orwell",
       "ano_publicacao": 1949,
       "categoria_id": 2
+    },
+    {
+      "titulo": "melão",
+      "autor": "dhyego",
+      "ano_publicacao": "2000",
+      "categoria_id": "4",
+      "id": 3
     }
   ],
   "categorias": [
@@ -76,6 +83,11 @@
       "nome": "dhyego",
       "senha": "122",
       "id": 7
+    },
+    {
+      "nome": "dhyego",
+      "senha": "123",
+      "id": 8
     }
   ],
   "pedidos": [
