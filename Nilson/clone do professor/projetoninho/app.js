@@ -1,9 +1,23 @@
 const express = require('express');
+const mysql = require('mysql');
+const bodyParser = require('body-parser');
 const app = express();
-const port = 4000;
+const port = 3000;
+const apiLivro = require('./apis/livros');
+const apiCategoria = require('./apis/categorias');
+
+
+// Middleware para lidar com dados codificados no corpo da solicitação
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+app.use('/', apiLivro);
+app.use('/', apiCategoria);
+
+
 
 // Define a rota para a página HTML
-app.get('/livros', (req, res) => {
+app.get('/tela/livros', (req, res) => {
   res.sendFile(__dirname + '/pages/livros/listLivros.html');
 });
 
@@ -21,7 +35,7 @@ app.get('/editlivros', (req, res) => {
 
 
 // Define a rota para a página HTML
-app.get('/categorias', (req, res) => {
+app.get('/tela/categorias', (req, res) => {
   res.sendFile(__dirname + '/pages/categorias/listCategorias.html');
 });
 
@@ -39,32 +53,29 @@ app.get('/editcategorias', (req, res) => {
 
 
 // Define a rota para a página HTML
-app.get('/usuarios', (req, res) => {
+app.get('/tela/usuarios', (req, res) => {
+  res.sendFile(__dirname + '/pages/usuarios/listUsuarios.html');
+});
+
+// Define a rota para a página HTML
+app.get('/addusuarios', (req, res) => {
   res.sendFile(__dirname + '/pages/usuarios/usuarios.html');
 });
 
 // Define a rota para a página HTML
-app.get('/pedidos', (req, res) => {
+app.get('/editusuarios', (req, res) => {
+  res.sendFile(__dirname + '/pages/usuarios/editUsuarios.html');
+});
+
+
+
+
+// Define a rota para a página HTML
+app.get('/tela/pedidos', (req, res) => {
   res.sendFile(__dirname + '/pages/pedidos/pedidos.html');
 });
 
 // Define a rota para a página HTML
-app.get('/editusuarios', (req, res) => {
-  res.sendFile(__dirname + 'pages/usuarios/editusuarios.html');
-});
-
-app.get('/listusuarios', (req, res) => {
-  res.sendFile(__dirname + '/pages/usuarios/listusuarios.html');
-});
-
-app.get('/editpedidos', (req, res) => {
-  res.sendFile(__dirname + '/pages/pedidos/editpedidos.html');
-});
-
-app.get('/listpedidos', (req, res) => {
-  res.sendFile(__dirname + '/pages/listpedidos.html');
-});
-
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/pages/index.html');
 });

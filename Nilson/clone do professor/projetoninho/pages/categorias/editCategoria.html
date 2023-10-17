@@ -12,14 +12,6 @@
 </head>
 <body>
     <div class="container">
-		<nav class="nav">
-			<a class="nav-link active" aria-current="page" href="/livros">Livros</a>
-			<a class="nav-link" href="/categorias">Categorias</a>
-			<a class="nav-link" href="/usuarios">Usuários</a>
-			<a class="nav-link active" href="/pedidos">Pedidos</a>
-		  </nav>
-    </div>
-    <div class="container">
         <h3 class="mt-5">Editar Categoria</h3>
         <form id="editar-form">
            
@@ -64,7 +56,7 @@
 
                 if (response.status === 200) {
                     alert('Registro atualizado com sucesso!');
-                    window.location.href = '/categorias'; // Redirecionar de volta para a lista de registros
+                    window.location.href = '/tela/categorias'; // Redirecionar de volta para a lista de registros
                 } else {
                     alert('Erro ao atualizar o registro.');
                 }

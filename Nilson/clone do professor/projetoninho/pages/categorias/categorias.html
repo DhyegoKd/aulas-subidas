@@ -10,14 +10,6 @@
 
 <body>
   <div class="container">
-		<nav class="nav">
-			<a class="nav-link active" aria-current="page" href="/livros">Livros</a>
-			<a class="nav-link" href="/categorias">Categorias</a>
-			<a class="nav-link" href="/usuarios">Usuários</a>
-			<a class="nav-link active" href="/pedidos">Pedidos</a>
-		  </nav>
-    </div>
-  <div class="container">
     <h3 class="mt-5">Cadastrar Categoria</h3>
   <form id="cadastrarCategoriaForm">
     <label for="nome" class="form-label">Nome:</label>
@@ -44,7 +36,7 @@
       .then(response => response.json())
       .then(data => {
         alert('Categoria cadastrada com sucesso!');
-        window.location.href = "/categorias";
+        window.location.href = "/tela/categorias";
       })
       .catch(error => {
         console.error('Erro ao cadastrar categoria:', error);

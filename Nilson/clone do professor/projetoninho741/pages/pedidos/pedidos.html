@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastrar Pedido</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+		<nav class="nav">
+			<a class="nav-link active" aria-current="page" href="/livros">Livros</a>
+			<a class="nav-link" href="/categorias">Categorias</a>
+			<a class="nav-link" href="/usuarios">Usuários</a>
+			<a class="nav-link active" href="/pedidos">Pedidos</a>
+		  </nav>
+    </div>
+  <h1>Cadastrar Pedido</h1>
+  <form id="cadastrarPedidoForm">
+    <label for="usuario_id">ID do Usuário:</label>
+    <input type="number" id="usuario_id" name="usuario_id" required><br><br>
+    
+    <label for="livro_id">ID do Livro:</label>
+    <input type="number" id="livro_id" name="livro_id" required><br><br>
+
+    <label for="data_emprestimo">Data de Empréstimo:</label>
+    <input type="date" id="data_emprestimo" name="data_emprestimo" required><br><br>
+
+    <label for="data_devolucao">Data de Devolução:</label>
+    <input type="date" id="data_devolucao" name="data_devolucao" required><br><br>
+    
+    <input type="submit" value="Cadastrar Pedido">
+  </form>
+</body>
+
+  <script>
+    const form = document.getElementById('cadastrarPedidoForm');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const data = new FormData(form);
+
+      fetch('http://localhost:3000/pedidos', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(Object.fromEntries(data)),
+      })
+      .then(response => response.json())
+      .then(data => {
+        alert('Pedido cadastrado com sucesso!');
+        // Você pode redirecionar o usuário para outra página ou fazer qualquer ação necessária aqui.
+      })
+      .catch(error => {
+        console.error('Erro ao cadastrar pedido:', error);
+      });
+    });
+  </script>
+</html>

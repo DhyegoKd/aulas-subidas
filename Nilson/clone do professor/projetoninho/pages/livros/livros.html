@@ -11,14 +11,6 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 </head>
 <body>
-  <div class="container">
-		<nav class="nav">
-			<a class="nav-link active" aria-current="page" href="/livros">Livros</a>
-			<a class="nav-link" href="/categorias">Categorias</a>
-			<a class="nav-link" href="/usuarios">Usuários</a>
-			<a class="nav-link active" href="/pedidos">Pedidos</a>
-		  </nav>
-    </div>
  
   <form id="cadastrarLivroForm">
     <div class="container">
@@ -65,7 +57,7 @@
       .then(response => response.json())
       .then(data => {
         alert('Livro cadastrado com sucesso!');
-        window.location.href = "/livros";
+        window.location.href = "tela/livros";
         // Você pode redirecionar o usuário para outra página ou fazer qualquer ação necessária aqui.
       })
       .catch(error => {
